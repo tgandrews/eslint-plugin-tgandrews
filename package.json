@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-tgandrews-rules",
+  "name": "eslint-plugin-tgandrews",
   "version": "1.0.0",
   "main": "lib/index.js",
   "repository": "https://github.com/tgandrews/eslint-plugin-export",
@@ -19,6 +19,8 @@
   "scripts": {
     "pretest": "yarn make",
     "test": "mocha --compilers js:babel-core/register test/**/*.js",
-    "make": "babel src -d lib"
+    "make": "babel src -d lib",
+    "tidy": "rm -rf lib",
+    "prepublish": "yarn tidy && yarn make"
   }
 }

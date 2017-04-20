@@ -18,7 +18,7 @@ tester.run('prefer-separate-exports', rule, {
     { 
       code: 'export default { foo: () => {}, bar: () => {} }', 
       errors: [{
-        message: 'Prefer separate exports over exporting an object',
+        message: 'Prefer separate exports over exporting a default object',
         ruleId: 'ExportDefaultDeclaration'
       }], 
     },

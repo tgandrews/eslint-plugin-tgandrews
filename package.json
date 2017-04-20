@@ -1,8 +1,8 @@
 {
   "name": "eslint-plugin-tgandrews",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
-  "repository": "https://github.com/tgandrews/eslint-plugin-export",
+  "repository": "https://github.com/tgandrews/eslint-plugin-tgandrews",
   "author": "Tom Andrews <git@tomandrews.co.uk>",
   "license": "MIT",
   "peerDependencies": {

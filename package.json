@@ -1,0 +1,24 @@
+{
+  "name": "eslint-plugin-tgandrews-rules",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": "https://github.com/tgandrews/eslint-plugin-export",
+  "author": "Tom Andrews <git@tomandrews.co.uk>",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "2.x - 3.x"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-preset-es2015-argon": "^0.1.0",
+    "eslint": "^3.19.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "pretest": "yarn make",
+    "test": "mocha --compilers js:babel-core/register test/**/*.js",
+    "make": "babel src -d lib"
+  }
+}
